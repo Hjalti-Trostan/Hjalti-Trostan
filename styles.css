@@ -11,6 +11,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+
     
 }
 
@@ -61,6 +62,15 @@ blockquote {
     justify-content: space-around;
 }
 
+.listi li {
+    font-family: 'Major Mono Display', monospace;
+    color: yellow;
+}
+
+.cdpr {
+    max-width: 100%;
+}
+
 .samurai {
     max-width: 50%;
 }
@@ -97,11 +107,12 @@ blockquote {
 }
 
 .innermenu a {
+    font-family: djgross;
     padding: .3em .5em;
-    background-color: rgb(23, 25, 119);
-    border: 1px solid rgb(194, 167, 137);
+    background-color: rgb(21, 0, 59, 0.9);
+    border: 2px solid yellow;
     text-transform: uppercase;
-    color: #fff;
+    color: yellow;
     text-decoration: none;
     text-align: center;
 }
@@ -112,9 +123,17 @@ blockquote {
 }
 
 .video {
-    width: 1000px;
-    height: 600px;
-
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border: 3px yellow solid;
 }
 
@@ -177,20 +196,14 @@ b {
         margin: 0;
     }
 
-    .video {
-        width: auto;
-        height: auto;
-    }
+
 }
 
 @media screen and (max-width: 48) {
     body {
         margin: 0;
     }
-    .video {
-        width: auto;
-        height: auto;
-    }
+
 }
 
 @media screen and (min-width: 48em) {
